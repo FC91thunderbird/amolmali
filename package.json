@@ -3,13 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/FC91thunderbird/amolmali.github.io",
+  "homepage": "https://github.com/amolmali.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
